@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Recurse \"E:\\\\Claude project Phylo\" -File | Select-Object -ExpandProperty FullName | Where-Object { $_ -notmatch 'node_modules' })"
+    ]
+  }
+}
