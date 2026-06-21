@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Phylo",
+    "slug": "phylo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a0a0a"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.phylo.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Phylo uses your camera to capture physique photos for analysis.",
+        "NSPhotoLibraryUsageDescription": "Phylo may save your scan results to your photo library."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0a"
+      },
+      "package": "com.phylo.app",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-camera",
+      "expo-secure-store",
+      [
+        "expo-linking",
+        {
+          "scheme": "phylo"
+        }
+      ]
+    ],
+    "scheme": "phylo",
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
